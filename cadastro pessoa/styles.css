@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.left-side {
+    flex: 1;
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    box-shadow: 8px 8px 25px rgb(0, 0, 0);
+    margin-right: 5px;
+    flex-direction: column;
+    border-radius: 6px;
+    padding: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    filter: sepia(50%);
+
+}
+
+
+.left-side h2 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+
+}
+
+.left-side label,
+.left-side input,
+.left-side button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+.left-side input,
+.left-side button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    color: gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.266);
+}
+
+
+input:hover {
+    box-shadow: 0 0 1em black;
+
+}
+
+
+
+.left-side button {
+    cursor: pointer;
+    border-style: double;
+    border-color: white;
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: black;
+    border-color: black;
+}
+
+
+.right-side {
+    flex: 2;
+    background-image: url('background.jpg');
+  
+    background-size: cover;
+    background-position: cover;
+    filter: blur(2px);
+
+    background-repeat: no-repeat;
+
+}
+
+.header {
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    padding: 2px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.logindiv {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 25px rgb(255, 255, 255);
+    font-weight: 600;
+    border: solid black;
+   
+   
+}
+
+.cadastrodiv {
+
+    display: none;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    /* border-radius: 8px;
+    box-shadow: 0 0 25px rgba(5, 5, 5, 1); */
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+}
+
+select {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+     color: gray; 
+     box-shadow: 0 0 10px rgba(76, 0, 255, 0.266); 
+}
+
+#ddd {
+    width: 45px;
+    margin-right: 3px;
+}
+
+#celular {
+    width: 100%;
+}
+
+.container-register-phone{
+    display: flex;
+    flex-direction: row;
+}
+#ex{
+    margin-right: 4%;
+}
+
+.noaccountbutton {
+    border: none;
+    font-size: small;
+}
