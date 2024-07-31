@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+
+
+
+        <div class="left-side">
+
+            <div class="loginpage">
+
+                <div class="logindiv">
+
+                    <form id="loginForm">
+                        <div class="header">
+                            <h2> Login </h2>
+
+                        </div>
+                        <label for="cpf">CPF:</label>
+                        <input type="text" id="cpf" name="cpf" placeholder="" required>
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" required><br>
+
+
+                        <button onclick="logar()" notrequired>Login</button>
+                        <button class="noaccountbutton" onclick="cadastro()" notrequired> Não tenho conta</button>
+
+                    </form>
+
+
+                    <button onclick="voltar()" class="voltar"> Home </button>
+
+                </div>
+
+            </div>
+            
+            <div class="cadastrodiv">
+
+                <h1>Novo Usuario </h1><Br>
+                <hr>
+                <br>
+                <h3>Cadastre-se</h3>
+                <br>
+
+                <form id="cadastroForm">
+                    <input type="text" id="nome" name="nome" placeholder="Nome Completo" required>
+                    <small>Data de Nascimento:</small><br>
+                    <input type="date" id="idade" name="idade" placeholder="Data de Nascimento" required>
+
+                    <small>Gênero:</small><br>
+                    <select id="genero">
+                        <option value="selecione">Selecione...</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outros">Outros...</option>
+                    </select>
+                    <input type="number" id="cpfNovo" name="cpfNovo" placeholder="CPF" required>
+
+                    <Br>
+                    <hr>
+                    <h3>Contato</h3>
+
+                    <small id="ex">Ex: (00)</small><small>00000-0000</small>
+                    <div class="container-register-phone">
+                        <input type="tel" id="ddd" pattern="[0-9]{2}" required>
+                        <input oninput="atualizaTel()" type="tel" id="celular" required><br><br>
+                    </div>
+                    <input type="email" id="email" placeholder="E-mail" required>
+                    <input type="text" id="endereco" placeholder="Cep" required>
+                    <br>
+                    <hr> <Br>
+                    <h3>Acesso</h3>
+                    <input type="password" id="senhaNova" placeholder="Senha" required>
+                    <input type="password" id="repSenhaNova" placeholder="Repita a senha" required><br>
+                    <button type="submit">Cadastrar</button>
+
+                </form>
+
+                <button onclick="voltar()">Voltar</button>
+
+            </div>
+        </div>
+
+        <div class="right-side">
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
