@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #272727;
+    color: #333;
+    padding: 20px;
+    filter: sepia(40%);
+}
+
+/* Cabeçalho */
+h1 {
+    color: #e2e2e2;
+    margin-bottom: 20px;
+    border-bottom: solid white ;
+}
+
+/* Lista de espécies */
+.species-list {
+    list-style: none;
+    padding: 0;
+}
+
+.species-list li {
+
+    filter: sepia(60%);
+    
+    background-color: rgba(0, 0, 0, 0.5); 
+
+
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.species-list button {
+    background-color: #080707;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.species-list button:hover {
+    background-color: #464343;
+    color: black;
+    border-color: black;
+}
+
+/* Botões de filtro */
+button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Divs para as espécies */
+#cachorros, #gatos, #outros {
+
+    margin-top: 20px;
+}
+
+#cachorros, #gatos, #outros {
+    /* filter: sepia(100%); */
+    background-color: gray;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.cardimg {
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+    border: solid gray;
+    border-radius: 8px;
+    
+     
+    
+}
+
+.card{
+    
+
+    background-color: rgb(59, 58, 58);
+    height: 500px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     
+    max-width: 500px;
+    
+    box-sizing: border-box;
+}
+
+
+.cardp { 
+    font-size: 15px;
+    
+    filter: sepia(100%);
+    color: gray;
+    
+}
